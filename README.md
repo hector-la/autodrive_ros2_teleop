@@ -1,15 +1,16 @@
-# AutoDRIVE Simulator + ROS 2 Humble Teleop 🏎️🤖
+## 🚀 1. Instalación del Simulador (Linux Standalone)
 
-Este repositorio contiene la guía de instalación y los nodos necesarios para comunicar el simulador **AutoDRIVE** con **ROS 2 Humble** en Ubuntu 22.04, permitiendo la teleoperación del vehículo.
+En lugar de instalar Unity, descargaremos el simulador ya compilado para Linux.
 
-## 📋 Requisitos Previos
-* **SO:** Ubuntu 22.04 LTS
-* **ROS 2:** Humble Hawksbill
-* **Python:** 3.10+
+### 1.1 Descargar el simulador
+Ejecuta estos comandos para descargar y descomprimir la última versión:
 
-## 🚀 Instalación
-
-### 1. Clonar el Simulador
-Primero, descargamos el simulador oficial (rama AutoDRIVE-Simul):
 ```bash
-git clone -b AutoDRIVE-Simul [https://github.com/Tinker-Twins/AutoDRIVE.git](https://github.com/Tinker-Twins/AutoDRIVE.git)
+# Crear carpeta para el simulador
+mkdir -p ~/autodrive_sim && cd ~/autodrive_sim
+
+# Descargar el comprimido (Reemplaza el link por la versión más reciente si es necesario)
+# Nota: Si el link oficial es un Google Drive, los chicos deberán descargarlo manualmente 
+# y moverlo a esta carpeta.
+
+
