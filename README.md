@@ -24,5 +24,7 @@ Sigue estos pasos para preparar el entorno de simulación:
 5. **Otorga permisos de ejecución** al binario principal abriendo una terminal en dicha carpeta:
    ```bash
    chmod +x "AutoDRIVE Simulator.x86_64"
-
+6. **Ejecuta el simulador** para verificar que abre correctamente:
+   ```bash
+   ./"AutoDRIVE Simulator.x86_64"
 
