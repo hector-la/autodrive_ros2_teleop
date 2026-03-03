@@ -31,7 +31,7 @@ Sigue estos pasos para preparar el entorno de simulación:
      ```bash
    ./"AutoDRIVE Simulator.x86_64"
 
-## 🛠️ 2. PUENTE CON ROS2(DEVKIT)
+## 🛠️ 2. PUENTE CON ROS2 (DEVKIT)
 
 ### 2.1 Configuración del Workspace y Entorno Virtual
 
@@ -45,8 +45,8 @@ mkdir -p ~/autodrive_ws/src
 cd ~/autodrive_ws
 ```
 ### 2.3 Configurar el Entorno Virtual (venv)
-```bash
 Crea y activa el entorno dentro de la raíz de tu workspace:
+```bash
 # Crear el entorno
 python3 -m venv venv
 
