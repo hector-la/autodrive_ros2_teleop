@@ -118,8 +118,6 @@ source install/setup.bash
 
 ## 🚀 4. Ejecución y Teleoperación
 
-## 🚀 4. Ejecución y Teleoperación
-
 Para poner en marcha el sistema, sigue este orden estrictamente. Recomendamos abrir terminales independientes para cada proceso.
 
 ### Paso 1: Iniciar el Puente de Comunicación (Bridge)
@@ -158,11 +156,11 @@ Acciones en el simulador:
 
     Selecciona el vehículo F1TENTH.
 
-    Haz clic en el botón de la antena (Disconnected) hasta que cambie a Connected (Verde).
+    Haz clic en el botón de la antena (Disconnected) hasta que cambie a Connected.
 
-    Verifica que el modo de manejo esté en Autonomous (puedes alternar con la tecla M).
+    Verifica que el modo de manejo esté en Autonomous.
 
-###Paso 3: Control por Teclado (Teleop)
+### Paso 3: Control por Teclado (Teleoperacion)
 
 En una nueva terminal, ejecuta el nodo para controlar el carro con las teclas:
 ```bash
