@@ -45,7 +45,7 @@ mkdir -p ~/autodrive_ws/src
 cd ~/autodrive_ws
 ```
 ### 2.3 Configurar el Entorno Virtual (venv)
-Crea y activa el entorno dentro de la raíz de tu workspace:
+2.3.1 Crea y activa el entorno dentro de la raíz de tu workspace:
 ```bash
 # Crear el entorno
 python3 -m venv venv
@@ -53,7 +53,7 @@ python3 -m venv venv
 # Activar el entorno (Debes hacer esto en cada terminal nueva)
 source venv/bin/activate
 ```
-Instalación de Dependencias
+2.3.2 Instalación de Dependencias
 
 Con el entorno activo (venv), instala las librerías necesarias con las versiones probadas para estabilidad:
 ```bash
@@ -62,7 +62,7 @@ pip install eventlet==0.33.3 Flask-SocketIO==4.1.0 python-socketio==4.2.0 \
             transforms3d attrdict numpy==1.23.5 opencv-contrib-python
 ```
 
-Parche de Compatibilidad Crítico
+2.3.3 Parche de Compatibilidad Crítico
 
 La librería attrdict presenta incompatibilidades con los módulos de colecciones en Python 3.10. Para solucionar el error de importación sin afectar el sistema global, aplica el siguiente parche directamente a los archivos dentro de tu venv:```bash
 ```bash
