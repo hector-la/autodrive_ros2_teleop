@@ -31,3 +31,46 @@ Sigue estos pasos para preparar el entorno de simulación:
      ```bash
    ./"AutoDRIVE Simulator.x86_64"
 
+## 🛠️ 2. DEVKIT ROS2
+
+**Configuración del Workspace y Entorno Virtual**
+
+Para evitar conflictos entre las versiones de librerías requeridas por el Devkit y las del sistema (Ubuntu 22.04), utilizaremos un **Entorno Virtual (venv)**. Esto permite aislar las dependencias de Python 3.8 en un entorno controlado.
+
+### Crear Espacio de Trabajo
+Ejecuta los siguientes comandos para crear la estructura de carpetas:
+
+   ```bash
+mkdir -p ~/autodrive_ws/src
+cd ~/autodrive_ws
+```
+### Configurar el Entorno Virtual (venv)
+```bash
+Crea y activa el entorno dentro de la raíz de tu workspace:
+# Crear el entorno
+python3 -m venv venv
+
+# Activar el entorno (Debes hacer esto en cada terminal nueva)
+source venv/bin/activate
+```
+Instalación de Dependencias
+
+Con el entorno activo (venv), instala las librerías necesarias con las versiones probadas para estabilidad:
+```bash
+pip install eventlet==0.33.3 Flask-SocketIO==4.1.0 python-socketio==4.2.0 \
+            python-engineio==3.13.0 gevent-websocket==0.10.1 \
+            transforms3d attrdict numpy==1.23.5 opencv-contrib-python
+```
+
+🔧 3. Parche de Compatibilidad Crítico
+
+La librería attrdict presenta incompatibilidades con los módulos de colecciones en Python 3.10. Para solucionar el error de importación sin afectar el sistema global, aplica el siguiente parche directamente a los archivos dentro de tu venv:```bash
+```bash
+# Corregir error de importación de Mapping en attrdict
+find ~/autodrive_ws/venv/lib/python3.10/site-packages/attrdict/ -name "*.py" -exec sed -i 's/from collections import Mapping/from collections.abc import Mapping/g' {} +
+
+# Corregir variantes de importación múltiple
+find ~/autodrive_ws/venv/lib/python3.10/site-packages/attrdict/ -name "*.py" -exec sed -i 's/from collections import Mapping, MutableMapping, Sequence/from collections.abc import Mapping, MutableMapping, Sequence/g' {} +
+
+```
+
