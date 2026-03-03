@@ -1,4 +1,4 @@
-# AutoDRIVE - ROS 2 Humble (AIROS) 🏎️
+# AutoDRIVE - Instalador y Puente con ROS2 (AIROS) 🏎️
 
 Este repositorio proporciona una guía detallada para instalar el simulador AutoDriver y configurar el puente de comunicación entre el **AutoDRIVE Simulator** y **ROS 2 Humble**. El objetivo es permitir el control y la adquisición de datos del vehículo **F1TENTH** para proyectos de robótica y navegación autónoma.
 
