@@ -33,18 +33,18 @@ Sigue estos pasos para preparar el entorno de simulación:
 
 ## 🛠️ 2. DEVKIT ROS2
 
-**2.1Configuración del Workspace y Entorno Virtual**
+### 2.1 Configuración del Workspace y Entorno Virtual
 
 Para evitar conflictos entre las versiones de librerías requeridas por el Devkit y las del sistema (Ubuntu 22.04), utilizaremos un **Entorno Virtual (venv)**. Esto permite aislar las dependencias de Python 3.8 en un entorno controlado.
 
-### 2.2Crear Espacio de Trabajo
+### 2.2 Crear Espacio de Trabajo
 Ejecuta los siguientes comandos para crear la estructura de carpetas:
 
    ```bash
 mkdir -p ~/autodrive_ws/src
 cd ~/autodrive_ws
 ```
-### 2.3Configurar el Entorno Virtual (venv)
+### 2.3 Configurar el Entorno Virtual (venv)
 ```bash
 Crea y activa el entorno dentro de la raíz de tu workspace:
 # Crear el entorno
@@ -74,7 +74,7 @@ find ~/autodrive_ws/venv/lib/python3.10/site-packages/attrdict/ -name "*.py" -ex
 
 ```
 
-## 2.4 Clonación y Organización del Workspace
+### 2.4 Clonación y Organización del Workspace
 
 Para que ROS 2 compile correctamente, debemos extraer únicamente el metapaquete necesario del repositorio oficial y limpiar los archivos redundantes.
 
@@ -97,7 +97,7 @@ rm -rf ~/autodrive_ws/src/AutoDRIVE
 ```
 
 
-## 2.5 Compilación del Workspace
+### 2.5 Compilación del Workspace
 
 Una vez organizada la carpeta src, procedemos a construir los paquetes. Asegúrate de tener el entorno virtual activo para que ROS reconozca las dependencias de Python instaladas.
 ```bash
