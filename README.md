@@ -47,7 +47,7 @@ cd ~/autodrive_ws
 ```
 ### 2.3 Configurar el Entorno Virtual (venv)
 2.3.1 Crea y activa el entorno dentro de la raíz de tu workspace:
-```bash
+   ```bash
 # Crear el entorno
 python3 -m venv venv
 
