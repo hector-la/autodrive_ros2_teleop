@@ -65,7 +65,7 @@ pip install eventlet==0.33.3 Flask-SocketIO==4.1.0 python-socketio==4.2.0 \
 
 2.3.3 Parche de Compatibilidad Crítico
 
-La librería attrdict presenta incompatibilidades con los módulos de colecciones en Python 3.10. Para solucionar el error de importación sin afectar el sistema global, aplica el siguiente parche directamente a los archivos dentro de tu venv:```bash
+La librería attrdict presenta incompatibilidades con los módulos de colecciones en Python 3.10. Para solucionar el error de importación sin afectar el sistema global, aplica el siguiente parche directamente a los archivos dentro de tu venv:
 ```bash
 # Corregir error de importación de Mapping en attrdict
 find ~/autodrive_ws/venv/lib/python3.10/site-packages/attrdict/ -name "*.py" -exec sed -i 's/from collections import Mapping/from collections.abc import Mapping/g' {} +
