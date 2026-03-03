@@ -160,8 +160,6 @@ cd ~/Downloads/AutoDRIVE_Sim  # Ajusta la ruta a tu carpeta
   ```
 Acciones en el simulador:
 
-    Selecciona el vehículo F1TENTH.
-
     Haz clic en el botón de la antena (Disconnected) hasta que cambie a Connected.
 
     Verifica que el modo de manejo esté en Autonomous.
