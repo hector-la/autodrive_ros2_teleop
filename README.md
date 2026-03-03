@@ -13,6 +13,8 @@ Antes de comenzar, asegúrate de contar con el siguiente entorno:
 
 ---
 
+
+
 ## 🕹️ 1. Instalación del Simulador
 
 Sigue estos pasos para preparar el entorno de simulación:
@@ -32,7 +34,10 @@ Sigue estos pasos para preparar el entorno de simulación:
      ```bash
    ./"AutoDRIVE Simulator.x86_64"
 
+     
+
 ## 🛠️ 2. PUENTE CON ROS2 (DEVKIT)
+
 
 ### 2.1 Configuración del Workspace y Entorno Virtual
 
@@ -75,6 +80,7 @@ find ~/autodrive_ws/venv/lib/python3.10/site-packages/attrdict/ -name "*.py" -ex
 
 ```
 
+
 ### 2.4 Clonación y Organización del Workspace
 
 Para que ROS 2 compile correctamente, debemos extraer únicamente el metapaquete necesario del repositorio oficial y limpiar los archivos redundantes.
@@ -86,6 +92,7 @@ Dirígete a la carpeta de código de tu espacio de trabajo y clona el Devkit:
 cd ~/autodrive_ws/src
 git clone --single-branch --branch AutoDRIVE-Devkit [https://github.com/Tinker-Twins/AutoDRIVE.git](https://github.com/Tinker-Twins/AutoDRIVE.git)
 ```
+
 Extracción y Limpieza
 
 Para evitar errores de paquetes duplicados durante la compilación, mueve la carpeta de ROS 2 a la raíz de src y elimina el resto del repositorio:
@@ -96,7 +103,6 @@ mv ~/autodrive_ws/src/AutoDRIVE/ADSS\ Toolkit/autodrive_ros2 ~/autodrive_ws/src/
 # Eliminar el repositorio original para evitar conflictos
 rm -rf ~/autodrive_ws/src/AutoDRIVE
 ```
-
 
 ### 2.5 Compilación del Workspace
 
@@ -116,6 +122,7 @@ colcon build --symlink-install
 # Cargar la configuración del workspace recién compilado
 source install/setup.bash
 ```
+
 
 ## 🚀 4. Ejecución y Teleoperación
 
