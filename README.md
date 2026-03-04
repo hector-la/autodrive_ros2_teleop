@@ -39,7 +39,7 @@ Follow these steps to prepare the simulation environment:
 
 
 1. **Download** the compressed file (.zip) of the simulator for Linux. 
-* ⬇️ [Download AutoDRIVE Simulator Linux](https://github.com/Tinker-Twins/AutoDRIVE/releases/download/Simulator-0.3.0/AutoDRIVE_Simulator_Linux.zip**)
+* ⬇️ [Download AutoDRIVE Simulator Linux](https://github.com/Tinker-Twins/AutoDRIVE/releases/download/Simulator-0.3.0/AutoDRIVE_Simulator_Linux.zip)
 
 2. **Save** the file in an accessible location and unzip it (e.g., ~/Downloads/AutoDRIVE_Sim).
 
@@ -316,11 +316,10 @@ Controls: W (Accelerate), S (Reverse), A (Left), D (Right), X (Brake).
 
 Note: You must keep this terminal window selected/focused for the vehicle to respond to keystrokes.
 
-## 🤝 Contributing
+# 🤝 Contributing
 Contributions are welcome! If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
 
-
-## ✉️ Contact
+ ✉️ Contact
 Hector La Mota - [LinkedIn](https://www.linkedin.com/in/h%C3%A9ctor-la-mota-5a9b7a2a8/)]  
 **AIROS - ESPOL**
